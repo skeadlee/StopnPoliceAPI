@@ -39,7 +39,7 @@ const displaySearchObjective = function(data){
   const articleForUseInTheft = _.sumBy(data, {object_of_search: "Article for use in theft"});
   const offensiveWeapons = _.sumBy(data, {object_of_search: "Offensive weapons"});
 
-  const chartData = google.visualisation.arrayToDataTable([
+  const chartData = google.visualization.arrayToDataTable([
     ["Objective of Search", "Number of Searches"],
     ["Controlled drugs", controlledDrugs],
     ["Stolen goods", stolenGoods],
